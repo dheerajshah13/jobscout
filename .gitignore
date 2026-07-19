@@ -1,0 +1,14 @@
+node_modules
+.next
+dist
+.env
+.env.local
+.DS_Store
+coverage
+*.tsbuildinfo
+
+# Supabase CLI local scratch
+supabase/.temp/
+
+# Internal AI-agent handoff notes (contains test creds) — keep local, not public
+HANDOFF.md
