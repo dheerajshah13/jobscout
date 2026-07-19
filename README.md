@@ -37,6 +37,12 @@ supabase/        SQL migrations (schema, RLS, self-service policies, CV storage,
 
 The matching engine lives in `packages/core` so the **same code** ranks jobs in the web app (on-demand runs) and the background worker (scheduled ingestion) — no duplicated logic.
 
+## Documentation
+
+- **[docs/PRD.md](docs/PRD.md)** — the full product concept & requirements: problem, users, features, scoring model, architecture, data model, roadmap. **Start here.**
+- **[PRODUCT.md](PRODUCT.md)** — MVP scoping decisions and build order.
+- **[job-app-build-plan.md](job-app-build-plan.md)** — the original detailed planning narrative.
+
 ## Local setup
 
 ```sh
