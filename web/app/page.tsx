@@ -9,6 +9,7 @@ import {
   type LucideIcon
 } from "lucide-react";
 import { JobCard } from "../components/job-card";
+import { RunMatchingButton } from "../components/run-matching-button";
 import { SiteHeader } from "../components/site-header";
 import { SiteFooter } from "../components/site-footer";
 import { getFeed } from "../lib/jobs";
@@ -145,14 +146,7 @@ async function Dashboard({ userId, runError, lang }: { userId: string; runError?
             </div>
             {isDemoProfile ? null : (
               <form action={runAiMatching}>
-                <button
-                  className="inline-flex items-center gap-2 rounded-md bg-pine px-5 py-2.5 font-semibold text-white disabled:cursor-not-allowed disabled:opacity-50"
-                  type="submit"
-                  disabled={runsLeft === 0}
-                >
-                  <Sparkles size={16} />
-                  Run AI matching
-                </button>
+                <RunMatchingButton disabled={runsLeft === 0} />
               </form>
             )}
           </div>
